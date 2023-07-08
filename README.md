@@ -1,29 +1,32 @@
 # Guide on how to set up the environment and use server.js
 
-Step 1: Open terminal in your text editor
+##Step 1 
+Open the terminal in the working directory
 
-
-Step 2: download following node.js packages (express, openai, cors) by running the code below in the terminal of the work directory one by one:
+##Step 2
+Download the `node.js` packages for Express, OpenAI, and Cors by running the following commands in the terminal one by one:
 ```
 npm ini
-(press ctrl C if needed)
 npm install express
 npm install openai
 npm install cors
 ```
 
-Step 3: replace your own openai api key with the old one (line 11) on "server.js"
+##Step 3
+Replace your own `OpenAI API key` with the placeholder '...' (at line 11) in the  `server.js` file
 
-Step 4: start the server by using 'node' command to check whether the server can work 
+##Step 4
+Start the server by using  `node` command to check whether the server can work 
 
-run the code below in terminal of the work directory:
+run the following command:
 ```
 node server.js
 ```
 
-Step 5: When you see the message "Server listening on port 3000", you are ready to open index.html to start the chat!
+##Step 5
+When you see the message "Server listening on port 3000", you are ready to open  `index.html` to start the chat!
 
-** if the server connection failed or expired, run the code below in terminal of the work directory again to fix the problem:
+** If the server connection failed or expired, run the code below in the terminal of the working directory again to fix the problem:
 ```
 node server.js
 ```
