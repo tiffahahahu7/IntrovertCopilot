@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introvert Copilot</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<!-- top nav bar -->
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="image/Introvert copilot Logo smaller.png" alt="cropped logo" class="bi me-2" width="40" height="32">
+        <span class="fs-4">Introvert Copilot</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <button class="btn" type="button" id="mymode">Dark mode 
+            <img id="mymodepic" src="image/dark mode.svg" alt="open dark mode">
+        </button>
+        <li class="nav-item"><a href="./my_account.html" class="nav-link active" aria-current="page">My Account</a></li>
+      </ul>
+    </header>
+</div>
+
+
+    <main>
+        <div class="character-manage-wrapper">
+            <div class="grid_card char_card">
+                <img src="image/avatar8.png" alt="Jane" class="avatar">
+                <div class="infowrapper">
+                    <p class="char_name">Jane</p>
+                    <form class="char-edit-name">
+                        <label for="edit_name">Edit name: </label>
+
+
+                    </form>    
+                    <input type="text" id="edit_name" name="edit_name"><br>
+                    <button class="w-100 btn btn-primary char-right-btn" id="char-name">edit name</button>   
+                    <button class="w-100 btn btn-primary char-right-btn" id="avatar">edit avatar</button>             
+                    </a>
+                </div>
+            </div>
+
+            <div class="character-manage-right-column">
+
+                <div class="char_data">
+                    <p class="char-title">Manage the information</p>
+
+                    <form id="char_form">
+                        <p class="char-item">Name: </p>
+                        <label>
+                            <input type="text" name="name">
+                        </label>
+
+                        <p class="char-item">Gender: </p>
+                        <p>Please select your gender:</p>
+                          <input type="radio"  name="gender" value="Male">
+                          <label for="Male">Male</label><br>
+                          <input type="radio" name="gender" value="Female">
+                          <label for="Female">Female</label><br>
+                          <input type="radio" name="gender" value="Other">
+                          <label for="Other">Other</label>
+
+                        <p class="char-item">Relationship with me: </p>
+                        <label>
+                            <input type="checkbox" name="relationship" value="Colleague">Colleague
+                        </label>
+                        <label>
+                            <input type="checkbox" name="relationship" value="Director">Director
+                        </label>
+                        <label>
+                            <input type="checkbox" name="relationship" value="Mentor">Mentor
+                        </label>
+                        <label>
+                            <input type="checkbox" name="relationship" value="Boss">Boss
+                        </label>
+                        <label>
+                            <input type="checkbox" name="relationship" value="LinkedIn contact">LinkedIn contact
+                        </label>
+                        <label>
+                            <input type="checkbox" name="relationship" value="People in my target company">People in my target company
+                        </label>
+                        <label>
+                            <input type="checkbox" name="relationship" value="People with the same passion as me">People with the same passion as me
+                        </label>
+                        <input type="text" name="relationship" placeholder="Others..."><br>
+                     
+
+                        <p class="char-item">Most likely talking context: </p>
+                        <label>
+                            <input type="checkbox" name="context" value="Meeting">Meeting
+                        </label>
+                        <label>
+                            <input type="checkbox" name="context" value="Coffee break">Coffee break
+                        </label>
+                        <label>
+                            <input type="checkbox" name="context" value="Conference">Conference
+                        </label>
+                        <input type="text" name="context" placeholder="Others..."><br>
+
+
+                        <p class="char-item">Interested in: </p>
+                        <label>
+                            <input type="checkbox" name="interest" value="Coding">Coding
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="Hiking">Hiking
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="Snow sports">Snow sports
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="FAANG">FAANG
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="Investment and market">Investment and market
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="Start-ups">Start-ups
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="Their university">Their university
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="Cars">Cars
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="Office stories">Office stories
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="Cats">Cats
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="Dogs">Dogs
+                        </label>
+                        <input type="text" name="interest12" placeholder="Others..."><br>
+
+
+                        <p class="char-item">Hates: </p>
+                        <input type="text" name="hates" placeholder="If any..."><br>
+
+                        <p class="char-item">Other information we should know: </p>
+                        <input type="text" name="other_info" placeholder="If any..."><br>
+
+                        <button class="w-100 btn btn-primary char-right-btn" type="button" id="save_info">Save</button>
+                    </form>
+                </div>
+
+
+
+            </div>
+            
+
+        </div>
+    </main>
+    <footer>
+        <img id="wavepic" src="image/wave.png" alt="wave in theme color">
+    </footer>
+<!-- popper and js integration of bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <script src="new_character.js"></script>
+</body>
+</html>

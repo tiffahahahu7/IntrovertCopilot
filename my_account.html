@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introvert Copilot</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- top nav bar -->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="./index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="image/Introvert copilot Logo smaller.png" alt="cropped logo" class="bi me-2" width="40"
+                    height="32">
+                <span class="fs-4">Introvert Copilot</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <button class="btn" type="button" id="mymode">Dark mode
+                    <img id="mymodepic" src="image/dark mode.svg" alt="open dark mode">
+                </button>
+
+                <li class="nav-item"><a href="./my_account.html" class="nav-link active" aria-current="page">My
+                        Account</a></li>
+
+            </ul>
+        </header>
+    </div>
+
+
+    <main>
+        <div class="my-acc-wrapper">
+            <div class="menu">
+                <a href="#manage_account">Manage My Account</a>
+                <a href="#context_management">Context Management</a>
+                <a href="#customize_model">Customize Model</a>
+                <a href="#payment_info">Payment Information</a>
+                <a href="#saved_sparks">Saved Sparks</a>
+            </div>
+
+            <div class="my-acc-right-column">
+                <section id="manage_account">
+                    <p class="char-item">Manage My Account</p>
+                    <form>
+                        <label for="account_name">Account name: </label>
+                        <input type="text" name="account_name" value="programthink" disabled><br>
+                        <label for="email_address">Email address: </label>
+                        <input type="text" name="email_address" value="program@think.net" disabled><br>
+                        <label for="current_plan">Current plan: </label>
+                        <input type="text" name="current_plan" value="Premium" disabled><br>
+                        <label for="email_setting">Email setting: </label>
+                        <input type="text" name="email_setting" value="Send me every morning from Monday to Friday"
+                            disabled>
+                    </form>
+                </section>
+                <section id="context_management">
+                    <p class="char-item">Context Management</p>
+                    <form>
+                        <label for="default_context">Default context: </label>
+                        <input type="text" name="default_context" value="Casual talk" disabled><br>
+                        <label for="tone">Tone preference: </label>
+                        <input type="text" name="tone" value="Friendly" disabled><br>
+                    </form>
+                </section>
+                <section id="customize_model">
+                    <p class="char-item">Customize the chat model</p>
+                    <form>
+                        <label for="temperature">Temperature: </label>
+                        <input type="text" name="temperature" value="0.9" disabled><br>
+                        <label for="restriction_size">Restriction size: </label>
+                        <input type="text" name="restriction_size" value="5" disabled><br>
+                    </form>
+                </section>
+                <section id="payment_info">
+                    <p class="char-item">Manage My Payment Information</p>
+                    <form id="payment_form">
+                        <label for="credit_card">Credit card number: </label>
+                        <input type="text" name="credit_card" value="********9999" disabled><br>
+                        <button class="w-100 btn btn-primary char-right-btn" type="button" id="payment_edit">Edit my
+                            payment infomation</button>
+                        <button class="w-100 btn btn-primary char-right-btn hidden" type="submit" id="save_payment_edit">Save</button>
+                    </form><br>
+                </section>
+                <section id="saved_sparks">
+                    <p class="char-item">Read my Saved Sparks here</p>
+                    <div id="content"></div>
+                </section>
+                <div id="saved_msg"></div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <img id="wavepic" src="image/wave.png" alt="wave in theme color">
+    </footer>
+
+    <!-- popper and js integration of bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+    <script src="my_account.js"></script>
+</body>
+
+</html>

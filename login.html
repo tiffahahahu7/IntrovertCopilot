@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introvert Copilot</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- top nav bar -->
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="image/Introvert copilot Logo smaller.png" alt="cropped logo" class="bi me-2" width="40" height="32">
+        <span class="fs-4">Introvert Copilot</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <button class="btn" type="button" id="mymode">Dark mode 
+          <img id="mymodepic" src="image/dark mode.svg" alt="open dark mode">
+        </button>
+      </ul>
+    </header>
+  </div>
+
+<!-- main part -->
+
+<main class="text-center form-signin w-100 m-auto">
+
+    <form id="myloginform">
+      <img class="mb-4" src="/image/Introvert copilot Logo smaller.png" alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  
+      <div class="form-floating">
+        <input type="email" class="form-control" id="myemail" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+
+      <div class="form-floating">
+        <input type="password" class="form-control" id="mypassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+  
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" id="rememberme" value="remember-me"> Remember me
+        </label>
+      </div>
+
+      <button class="w-100 btn btn-lg btn-primary mylogin" type="submit">Sign in</button>
+      <br>
+      <br>
+      <button class="w-100 btn btn-lg btn-primary mysign-up" type="submit">Login</button>
+      <div id="errorMessage"></div>
+    </form>
+  </main>
+
+
+<!-- popper and js integration of bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+
+<script src="login.js"></script>
+</body>
+</html>

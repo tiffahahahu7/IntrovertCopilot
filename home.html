@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introvert Copilot</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- top nav bar -->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="./index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="image/Introvert copilot Logo smaller.png" alt="cropped logo" class="bi me-2" width="40"
+                    height="32">
+                <span class="fs-4">Introvert Copilot</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <button class="btn" type="button" id="mymode">Dark mode
+                    <img id="mymodepic" src="image/dark mode.svg" alt="open dark mode">
+                </button>
+                <li class="nav-item"><a href="./my_account.html" class="nav-link active" aria-current="page">My
+                        Account</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <main>
+
+        <section id="card_gallery">
+            <h3>Today I wish to start a <button id="start-chat-btn" class="btn mytypebtn">chit chat</button> with:</h3>
+
+            <div class="grid_container">
+
+                <div class="grid_card" id="grid_card_jane">
+                    <img src="image/avatar8.png" alt="Jane" class="avatar">
+                    <div class="infowrapper">
+                        <p class="char_name">Jane</p>
+                    </div>
+                </div>
+
+                <div class="grid_card" id="grid_card_john">
+                    <img src="image/avatar7.png" alt="John" class="avatar">
+                    <div class="infowrapper">
+                        <p class="char_name">John</p>
+                    </div>
+                </div>
+
+                <div class="grid_card" id="grid_card_jose">
+                    <img src="image/avatar10.png" alt="Jose" class="avatar">
+                    <div class="infowrapper">
+                        <p class="char_name">Jose</p>
+                    </div>
+                </div>
+
+                <div class="grid_card" id="grid_card_jess">
+                    <img src="image/avatar16.png" alt="Jess" class="avatar">
+                    <div class="infowrapper">
+                        <p class="char_name">Jess</p>
+                    </div>
+                </div>
+
+
+                <div class="grid_card add_person" id="grid_card_add_person">
+                    <div class="infowrapper">
+                        <a href="new_character.html" id="add_new_person_link" target="_blank">
+                            <p class="add_new_person">...</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <h3>AI <span class="mytypebtn">spark</span> response</h3>
+
+        <section id="spark">
+            <div class="sparkwrapper" id="chat-box">
+                <!-- for AI generated spark -->
+                <div class="aspark" id="intro_bot">
+                    <img class="logo_image" src="image/Introvert copilot Logo smaller.png" alt="Introvert Copilot">
+                    <div class="bot">
+                        Thank you for using this our product! We are generating the best answer for you...
+                    </div>
+                    <button type="button" class="save_spark">Save</button>
+
+                </div>
+
+                <!-- for user's follow-up questions -->
+                <div class="afollowup" id="intro_user">
+                    <img class="logo_image" src="image/user.png" alt="user's avatar">
+                    <div class="user">
+                        Please add more details and use a more enthusiastic tone.
+                    </div>
+                </div>
+
+            </div>
+
+            <form id="question_form">
+                <input type="text" id="input-field" name="question" placeholder="Ask a question...">
+                <button class="btn-primary" type="submit" id="send-button">Send</button>
+            </form>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p class="text-center text-body-secondary">&copy; Picture from freepik.com</p>
+        <img id="wavepic" src="image/wave.png" alt="wave in theme color">
+    </footer>
+
+    <!-- popper and js integration of bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+
+    <!-- project js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="server.js"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>
